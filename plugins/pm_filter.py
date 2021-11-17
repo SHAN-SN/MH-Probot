@@ -429,11 +429,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('Manual Filter', callback_data='manuelfilter'),
-            InlineKeyboardButton('Auto Filter', callback_data='autofilter')
+            InlineKeyboardButton('🗣️ Our Group', url='https://t.me/movies_Hubh2'),
+            InlineKeyboardButton('🎞 New Releases', url='https://t.me/joinchat/aG4_u8iHx31mNzVl')
             ],[
-            InlineKeyboardButton('Connection', callback_data='coct'),
-            InlineKeyboardButton('Extra Mods', callback_data='extra')
+            InlineKeyboardButton('🎭 Movies Hub Channel 📢', url='https://t.me/joinchat/B94VHKIvaEFmMWE1')
+            ],[
+            InlineKeyboardButton('📺 TV-Series', url='https://t.me/Series_MH'),
+            InlineKeyboardButton('Share 🎗️ Support', url='https://t.me/share/url?url=https://t.me/movies_Hubh2')
             ],[
             InlineKeyboardButton('🏠 Home', callback_data='start'),
             InlineKeyboardButton('🔮 Status', callback_data='stats')
