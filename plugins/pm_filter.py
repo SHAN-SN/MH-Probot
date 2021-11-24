@@ -413,13 +413,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('Add Me To Your Groups', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/EvaMariaUpdates')
-            ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+        InlineKeyboardButton('🗣️ Oᴜʀ Gʀᴏᴜᴘ ', url='https://t.me/movies_Hubh2'),
+        InlineKeyboardButton('💺 Nᴇᴡ Rᴇʟᴇᴀsᴇ 🍿', url='https://t.me/joinchat/aG4_u8iHx31mNzVl')
+    ],[
+        InlineKeyboardButton('🎭 Mᴏᴠɪs Hᴜʙ Cʜᴀɴɴᴇʟ 📢', url='https://t.me/joinchat/lUOk6p8Lo445MmNl')
+    ],[
+        InlineKeyboardButton('Mᴏᴠɪᴇs Hᴜʙ Uᴘᴅᴀᴛᴇs 📨', url='https://t.me/MoviesHub_Updates')
+    ],[
+        InlineKeyboardButton('📺 Tᴠ-Wᴇʙ Sᴇʀɪᴇs', url='https://t.me/MH_Series1'),
+        InlineKeyboardButton('Sʜᴀʀᴇ 🎗 Sᴜᴘᴘᴏʀᴛ', url='https://t.me/share/url?url=https://t.me/movies_Hubh2')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -427,7 +429,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-    elif query.data == "help":
+    elif query.data == "mh2":
         buttons = [[
             InlineKeyboardButton('🗣️ Our Group', url='https://t.me/movies_Hubh2'),
             InlineKeyboardButton('🎞 New Releases', url='https://t.me/joinchat/aG4_u8iHx31mNzVl')
@@ -442,11 +444,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.HELP_TXT.format(query.from_user.mention),
+            text=script.MH2_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode='html'
         )
-    elif query.data == "about":
+    elif query.data == "information":
         buttons= [[
             InlineKeyboardButton('🤖 Updates', url='https://t.me/EvaMariaUpdates'),
             InlineKeyboardButton('♥️ Source', callback_data='source')
@@ -456,7 +458,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.ABOUT_TXT.format(temp.B_NAME),
+            text=script.INFORMATION_TXT.format(temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
         )
@@ -606,7 +608,7 @@ async def auto_filter(client, msg, spoll=False):
                     callback_data=f'files#{file.file_id}',
                 ),
                 InlineKeyboardButton(
-                    text=f"{get_size(file.file_size)}",
+                    text=f"[{get_size(file.file_size)}]",
                     callback_data=f'files_#{file.file_id}',
                 ),
             ]
