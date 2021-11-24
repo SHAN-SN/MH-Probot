@@ -36,11 +36,13 @@ async def start(client, message):
     if len(message.command) != 2:
         buttons = [[
         InlineKeyboardButton('🗣️ Oᴜʀ Gʀᴏᴜᴘ ', url='https://t.me/movies_Hubh2'),
-        InlineKeyboardButton('🎫 Nᴇᴡ Rᴇʟᴇᴀsᴇ 🍿', url='https://t.me/joinchat/aG4_u8iHx31mNzVl')
+        InlineKeyboardButton('💺 Nᴇᴡ Rᴇʟᴇᴀsᴇ 🍿', url='https://t.me/joinchat/aG4_u8iHx31mNzVl')
     ],[
         InlineKeyboardButton('🎭 Mᴏᴠɪs Hᴜʙ Cʜᴀɴɴᴇʟ 📢', url='https://t.me/joinchat/lUOk6p8Lo445MmNl')
     ],[
-        InlineKeyboardButton('📺 Tᴠ-Wᴇʙ Sᴇʀɪᴇs', url='https://t.me/Series_MH'),
+        InlineKeyboardButton('Mᴏᴠɪᴇs Hᴜʙ Uᴘᴅᴀᴛᴇs 📨', url='https://t.me/MoviesHub_Updates')
+    ],[
+        InlineKeyboardButton('📺 Tᴠ-Wᴇʙ Sᴇʀɪᴇs', url='https://t.me/MH_Series1'),
         InlineKeyboardButton('Sʜᴀʀᴇ 🎗 Sᴜᴘᴘᴏʀᴛ', url='https://t.me/share/url?url=https://t.me/movies_Hubh2')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
