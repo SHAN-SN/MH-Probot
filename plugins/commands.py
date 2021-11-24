@@ -17,10 +17,10 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
+                InlineKeyboardButton('NEW RELEASE 🍿', url='https://t.me/joinchat/rAWW1iD2NBVhZTc1')
             ],
             [
-                InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('MH Updates 💬', url=f"https://t.me/MoviesHub_Updates"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -60,7 +60,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🤖 Join Updates Channel", url=invite_link.invite_link
+                    "🎭 JOIN OUR CHANNEL 📣", url=invite_link.invite_link
                 )
             ]
         ]
@@ -76,13 +76,13 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay"]:
         buttons = [[
-            InlineKeyboardButton('Add Me To Your Groups', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/EvaMariaUpdates')
-            ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+        InlineKeyboardButton('🗣️ 𝒪𝓊𝓇  𝒢𝓇𝑜𝓊𝓅 ', url='https://t.me/movies_Hubh2'),
+        InlineKeyboardButton('🎫 ℕ𝙚𝙬 ℝ𝙚𝙡𝙚𝙖𝙨𝙚 🍿', url='https://t.me/joinchat/aG4_u8iHx31mNzVl')
+    ],[
+        InlineKeyboardButton('🎭 ℳ𝐨𝐯𝐢𝐞𝐬 ℋ𝐮𝐛 ℂ𝐡𝐚𝐧𝐧𝐞𝐥 📢', url='https://t.me/joinchat/lUOk6p8Lo445MmNl')
+    ],[
+        InlineKeyboardButton('S𝙚𝙧𝙞𝙚𝙨 ℍ𝙪𝙗 📺', url='https://t.me/Series_MH'),
+        InlineKeyboardButton('S̷𝕙𝕒𝕣𝕖 🎗 S̷𝕦𝕡𝕡𝕠𝕣𝕥', url='https://t.me/share/url?url=https://t.me/movies_Hubh2')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
