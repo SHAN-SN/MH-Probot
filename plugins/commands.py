@@ -35,13 +35,13 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-        InlineKeyboardButton('🗣️ 𝒪𝓊𝓇  𝒢𝓇𝑜𝓊𝓅 ', url='https://t.me/movies_Hubh2'),
-        InlineKeyboardButton('🎫 ℕ𝙚𝙬 ℝ𝙚𝙡𝙚𝙖𝙨𝙚 🍿', url='https://t.me/joinchat/aG4_u8iHx31mNzVl')
+        InlineKeyboardButton('🗣️ Oᴜʀ Gʀᴏᴜᴘ ', url='https://t.me/movies_Hubh2'),
+        InlineKeyboardButton('🎫 Nᴇᴡ Rᴇʟᴇᴀsᴇ 🍿', url='https://t.me/joinchat/aG4_u8iHx31mNzVl')
     ],[
-        InlineKeyboardButton('🎭 ℳ𝐨𝐯𝐢𝐞𝐬 ℋ𝐮𝐛 ℂ𝐡𝐚𝐧𝐧𝐞𝐥 📢', url='https://t.me/joinchat/lUOk6p8Lo445MmNl')
+        InlineKeyboardButton('🎭 Mᴏᴠɪs Hᴜʙ Cʜᴀɴɴᴇʟ 📢', url='https://t.me/joinchat/lUOk6p8Lo445MmNl')
     ],[
-        InlineKeyboardButton('S𝙚𝙧𝙞𝙚𝙨 ℍ𝙪𝙗 📺', url='https://t.me/Series_MH'),
-        InlineKeyboardButton('S̷𝕙𝕒𝕣𝕖 🎗 S̷𝕦𝕡𝕡𝕠𝕣𝕥', url='https://t.me/share/url?url=https://t.me/movies_Hubh2')
+        InlineKeyboardButton('📺 Tᴠ-Wᴇʙ Sᴇʀɪᴇs', url='https://t.me/Series_MH'),
+        InlineKeyboardButton('Sʜᴀʀᴇ 🎗 Sᴜᴘᴘᴏʀᴛ', url='https://t.me/share/url?url=https://t.me/movies_Hubh2')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
