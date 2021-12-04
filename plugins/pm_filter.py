@@ -122,7 +122,7 @@ async def next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("🔙《 Bᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"📙 Eɴᴅ Pᴀɢᴇ {round(int(offset)/10)+1} / {round(total/10)}", callback_data="pages")]
+            [InlineKeyboardButton("《  Bᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"Eɴᴅ Pᴀɢᴇ {round(int(offset)/10)+1} / {round(total/10)}", callback_data="pages")]
         )
     elif off_set is None:
         btn.append([InlineKeyboardButton(f"📖 {round(int(offset)/10)+1} / {round(total/10)} 📚️", callback_data="pages"), InlineKeyboardButton("Lᴀsᴛ Pᴀɢᴇ 〉", callback_data=f"next_{req}_{key}_{n_offset}")])
@@ -414,7 +414,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "start":
         buttons = [[
         InlineKeyboardButton('🗣️ Oᴜʀ Gʀᴏᴜᴘ ', url='https://t.me/movies_Hubh2'),
-        InlineKeyboardButton('💺 Nᴇᴡ Rᴇʟᴇᴀsᴇ 🍿', url='https://t.me/joinchat/aG4_u8iHx31mNzVl')
+        InlineKeyboardButton('💺 Nᴇᴡ Rᴇʟᴇᴀsᴇ 🍿', url='https://t.me/+B94VHKIvaEFmMWE1')
     ],[
         InlineKeyboardButton('🎭 Mᴏᴠɪs Hᴜʙ Cʜᴀɴɴᴇʟ 📢', url='https://t.me/joinchat/lUOk6p8Lo445MmNl')
     ],[
@@ -595,7 +595,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"{get_size(file.file_size)} {file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -608,7 +608,7 @@ async def auto_filter(client, msg, spoll=False):
                     callback_data=f'files#{file.file_id}',
                 ),
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}]",
+                    text=f"{get_size(file.file_size)}",
                     callback_data=f'files_#{file.file_id}',
                 ),
             ]
