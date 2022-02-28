@@ -17,9 +17,6 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('NEW RELEASE 🍿', url='https://t.me/joinchat/rAWW1iD2NBVhZTc1')
-            ],
-            [
                 InlineKeyboardButton('MH Updates 💬', url=f"https://t.me/MoviesHub_Updates"),
             ]
             ]
@@ -35,15 +32,8 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-        InlineKeyboardButton('🗣️ Oᴜʀ Gʀᴏᴜᴘ ', url='https://t.me/movies_Hubh2'),
-        InlineKeyboardButton('💺 Nᴇᴡ Rᴇʟᴇᴀsᴇ 🍿', url='https://t.me/joinchat/aG4_u8iHx31mNzVl')
-    ],[
-        InlineKeyboardButton('🎭 Mᴏᴠɪs Hᴜʙ Cʜᴀɴɴᴇʟ 📢', url='https://t.me/joinchat/lUOk6p8Lo445MmNl')
-    ],[
-        InlineKeyboardButton('Mᴏᴠɪᴇs Hᴜʙ Uᴘᴅᴀᴛᴇs 📨', url='https://t.me/MoviesHub_Updates')
-    ],[
-        InlineKeyboardButton('📺 Tᴠ-Wᴇʙ Sᴇʀɪᴇs', url='https://t.me/MH_Series1'),
-        InlineKeyboardButton('Sʜᴀʀᴇ 🎗 Sᴜᴘᴘᴏʀᴛ', url='https://t.me/share/url?url=https://t.me/movies_Hubh2')
+        InlineKeyboardButton(' MH Links 🧩', url='https://t.me/MH_Linkz'),
+        InlineKeyboardButton(' Updates 📡', url='https://t.me/MoviesHub_Updates')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -78,15 +68,8 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay"]:
         buttons = [[
-        InlineKeyboardButton('🗣️ Oᴜʀ Gʀᴏᴜᴘ ', url='https://t.me/movies_Hubh2'),
-        InlineKeyboardButton('💺 Nᴇᴡ Rᴇʟᴇᴀsᴇ 🍿', url='https://t.me/joinchat/aG4_u8iHx31mNzVl')
-    ],[
-        InlineKeyboardButton('🎭 Mᴏᴠɪs Hᴜʙ Cʜᴀɴɴᴇʟ 📢', url='https://t.me/joinchat/lUOk6p8Lo445MmNl')
-    ],[
-        InlineKeyboardButton('Mᴏᴠɪᴇs Hᴜʙ Uᴘᴅᴀᴛᴇs 📨', url='https://t.me/MoviesHub_Updates')
-    ],[
-        InlineKeyboardButton('📺 Tᴠ-Wᴇʙ Sᴇʀɪᴇs', url='https://t.me/MH_Series1'),
-        InlineKeyboardButton('Sʜᴀʀᴇ 🎗 Sᴜᴘᴘᴏʀᴛ', url='https://t.me/share/url?url=https://t.me/movies_Hubh2')
+        InlineKeyboardButton(' MH Links 🧩', url='https://t.me/MH_Linkz'),
+        InlineKeyboardButton(' Updates 📡', url='https://t.me/MoviesHub_Updates')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
