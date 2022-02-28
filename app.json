@@ -15,8 +15,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/SHAN-SN/MHProBot-Eva",
-    "repository": "https://github.com/SHAN-SN/MHProBot-Eva",
+    "website": "https://github.com/SHAN-SN/MH-Probot",
+    "repository": "https://github.com/SHAN-SN/MH-Probot",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
